@@ -37,6 +37,9 @@
     background: radial-gradient(50% 50% at 50% 50%, rgba(29, 237, 131, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
+.logo-img{
+    margin-top: 20px;
+}
 
 .title-text-style{
     font-weight: 700;
@@ -78,6 +81,7 @@
 .toggle-btn-left, .toggle-btn-right {
     padding: 3px 15px 3px 5px;
     font-size: 28px;
+    font-family: Calibri;
     width: 50%;
     cursor: pointer;
     background: transparent;
@@ -86,6 +90,47 @@
     position: absolute;
     text-align: center;
     clip-path:  polygon(0% 0%, 100% 0%, 100% 40%, 90% 100%, 0% 100%);
+}
+
+.footer-container {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-info{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+.button-border{
+    top: 40px;
+    width: 30%;
+    height: 39px;
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 101% 33%, 95% 100%, 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-buttons {
+    color: #ffffff;
+    background-color: #2570d455;
+    border: 3px solid #2570d4;
+    padding: 15px 17px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 64%, 64% 100%, 20% 100%, 0 100%, 0% 20%);
+}
+
+.footer-buttons:hover {
+    color: #2570d455;
+    background-color: #2d63c8;
 }
 
 #selector-switcher {
@@ -100,8 +145,42 @@
     clip-path:  polygon(0% 0%, 100% 0%, 100% 40%, 90% 100%, 0% 100%);
 }
 
+.main-container{
+    padding: 50px;
+}
 
 .main-title{
-    top: 90px;
     position: relative;
+    font-family: Calibri;
+}
+
+.main-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clickOnMe-button{
+    font-size: 51px;
+    font-family: Calibri;
+    background-color: #2570d455;
+    border: 3px solid #2570d4;
+    padding: 15px 55px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 63%, 77% 100%, 0 100%, 0% 20%);
+}
+
+.instruction-button{
+    font-size: 25px;
+    font-family: Calibri;
+    background-color: #2570d455;
+    border: 3px solid #2570d4;
+    padding: 15px 20px;
+    margin-bottom: 150px;
+    cursor: pointer;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 60%, 87% 100%, 0 100%, 0% 20%);
+
 }
