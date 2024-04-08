@@ -1,16 +1,16 @@
 var selectorSwitcher = document.getElementById('selector-switcher');
 selectorSwitcher.style.backgroundColor = "rgb(37, 112, 212)";
 
-function leftClick() {
-    selectorSwitcher.style.left = '0';
-    selectorSwitcher.style.backgroundColor = "rgb(37, 112, 212)";
-    changeStyle('primaryBackgroundColor-green', 'primaryBackgroundColor-blue');
-    changeStyle('secondaryBackgroundColor-green', 'secondaryBackgroundColor-blue');
-    changeStyle('primaryTextColor-green', 'primaryTextColor-blue');
-    changeStyle('main-gradient-green', 'main-gradient-blue');
-}
-
-function rightClick() {
+function changeGameType() {
+    if(selectorSwitcher.style.left === '50%'){
+        selectorSwitcher.style.left = '0';
+        selectorSwitcher.style.backgroundColor = "rgb(37, 112, 212)";
+        changeStyle('primaryBackgroundColor-green', 'primaryBackgroundColor-blue');
+        changeStyle('secondaryBackgroundColor-green', 'secondaryBackgroundColor-blue');
+        changeStyle('primaryTextColor-green', 'primaryTextColor-blue');
+        changeStyle('main-gradient-green', 'main-gradient-blue');
+        return;
+    }
     selectorSwitcher.style.left = '50%';
     selectorSwitcher.style.backgroundColor = "rgba(29, 237, 131)";
     changeStyle('primaryBackgroundColor-blue', 'primaryBackgroundColor-green');
