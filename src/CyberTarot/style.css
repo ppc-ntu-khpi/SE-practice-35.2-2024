@@ -4,3 +4,75 @@
     margin-right: auto;
     width: 50%;
 }
+
+.primaryBackgroundColor-blue{
+    background-color: rgb(37, 112, 212);
+}
+
+.secondaryBackgroundColor-blue{
+    background-color: rgb(20, 58, 112);
+}
+
+.primaryBackgroundColor-green{
+    background-color: rgba(29, 237, 131);
+}
+
+.secondaryBackgroundColor-green{
+    background-color: rgb(19, 128, 72);
+}
+
+.selector-box {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    content: "";
+    width: 99%;
+    height: 35px;
+    position: absolute;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 40%, 95% 100%, 0% 100%);
+}
+
+.selector-border {
+    top: 40px;
+    width: 30%;
+    height: 39px;
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 101% 33%, 95% 100%, 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-btn-left{
+
+}
+
+.toggle-btn-right {
+    left: 50%;
+}
+
+.toggle-btn-left, .toggle-btn-right {
+    padding: 3px 15px 3px 5px;
+    font-size: 28px;
+    width: 50%;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: absolute;
+    text-align: center;
+    clip-path:  polygon(0% 0%, 100% 0%, 100% 40%, 90% 100%, 0% 100%);
+}
+
+#selector-switcher {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-radius: 2px;
+    content: "";
+    transition: .3s;
+    clip-path:  polygon(0% 0%, 100% 0%, 100% 40%, 90% 100%, 0% 100%);
+}
