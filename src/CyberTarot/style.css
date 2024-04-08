@@ -13,12 +13,35 @@
     background-color: rgb(20, 58, 112);
 }
 
+.primaryTextColor-blue{
+    color: rgba(37, 112, 212, 1);
+}
+
+.main-gradient-blue{
+    background: radial-gradient(50% 50% at 50% 50%, rgba(37, 112, 212, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
 .primaryBackgroundColor-green{
     background-color: rgba(29, 237, 131);
 }
 
 .secondaryBackgroundColor-green{
     background-color: rgb(19, 128, 72);
+}
+
+.primaryTextColor-green{
+    color: rgba(29, 237, 131, 1);
+}
+
+.main-gradient-green{
+    background: radial-gradient(50% 50% at 50% 50%, rgba(29, 237, 131, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+
+.title-text-style{
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
 }
 
 .selector-box {
@@ -75,4 +98,10 @@
     content: "";
     transition: .3s;
     clip-path:  polygon(0% 0%, 100% 0%, 100% 40%, 90% 100%, 0% 100%);
+}
+
+
+.main-title{
+    top: 90px;
+    position: relative;
 }

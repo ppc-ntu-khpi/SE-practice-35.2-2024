@@ -6,6 +6,8 @@ function leftClick() {
     selectorSwitcher.style.backgroundColor = "rgb(37, 112, 212)";
     changeStyle('primaryBackgroundColor-green', 'primaryBackgroundColor-blue');
     changeStyle('secondaryBackgroundColor-green', 'secondaryBackgroundColor-blue');
+    changeStyle('primaryTextColor-green', 'primaryTextColor-blue');
+    changeStyle('main-gradient-green', 'main-gradient-blue');
 }
 
 function rightClick() {
@@ -13,6 +15,8 @@ function rightClick() {
     selectorSwitcher.style.backgroundColor = "rgba(29, 237, 131)";
     changeStyle('primaryBackgroundColor-blue', 'primaryBackgroundColor-green');
     changeStyle('secondaryBackgroundColor-blue', 'secondaryBackgroundColor-green');
+    changeStyle('primaryTextColor-blue', 'primaryTextColor-green');
+    changeStyle('main-gradient-blue', 'main-gradient-green');
 }
 
 function changeStyle(from, to){
