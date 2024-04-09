@@ -1,30 +1,55 @@
+
 var selectorSwitcher = document.getElementById('selector-switcher');
 selectorSwitcher.style.backgroundColor = "rgb(37, 112, 212)";
+changeStyle("blue");
 
 function changeGameType() {
     if(selectorSwitcher.style.left === '50%'){
         selectorSwitcher.style.left = '0';
         selectorSwitcher.style.backgroundColor = "rgb(37, 112, 212)";
-        changeStyle('primaryBackgroundColor-green', 'primaryBackgroundColor-blue');
-        changeStyle('secondaryBackgroundColor-green', 'secondaryBackgroundColor-blue');
-        changeStyle('primaryTextColor-green', 'primaryTextColor-blue');
-        changeStyle('main-gradient-green', 'main-gradient-blue');
+        changeStyle('blue');
         return;
     }
     selectorSwitcher.style.left = '50%';
     selectorSwitcher.style.backgroundColor = "rgba(29, 237, 131)";
-    changeStyle('primaryBackgroundColor-blue', 'primaryBackgroundColor-green');
-    changeStyle('secondaryBackgroundColor-blue', 'secondaryBackgroundColor-green');
-    changeStyle('primaryTextColor-blue', 'primaryTextColor-green');
-    changeStyle('main-gradient-blue', 'main-gradient-green');
+    changeStyle('green');
 }
 
-function changeStyle(from, to){
-    var elements = document.getElementsByClassName(from);
+function changeStyle(to){
+    document.getElementById("gitHubIcon").setAttribute("src", `images/icon_github_${to}.svg`);
+    document.getElementById("contactsIcon").setAttribute("src", `images/icon_contacts_${to}.svg`);
+
+    var painter = new Painter();
+
+    var elements = document.getElementsByClassName("primaryBackground");
+    var color = painter.getPrimaryBackgroundColor(to);
     for (var i in elements) {
         if (elements.hasOwnProperty(i)) {
-            elements[i].className = elements[i].className.replace(from, to);
+            elements[i].style.backgroundColor = color;
+        }
+    }
+
+    elements = document.getElementsByClassName("secondaryBackground");
+    color = painter.getSecondaryBackgroundColor(to);
+    for (var i in elements) {
+        if (elements.hasOwnProperty(i)) {
+            elements[i].style.backgroundColor = color;
+        }
+    }
+
+    elements = document.getElementsByClassName("primaryText");
+    color = painter.getPrimaryTextColor(to);
+    for (var i in elements) {
+        if (elements.hasOwnProperty(i)) {
+            elements[i].style.color = color;
+        }
+    }
+
+    elements = document.getElementsByClassName("mainGradient");
+    color = painter.getMainGradientColor(to);
+    for (var i in elements) {
+        if (elements.hasOwnProperty(i)) {
+            elements[i].style.background = color;
         }
     }
 }
-

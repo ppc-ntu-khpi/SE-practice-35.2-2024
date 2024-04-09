@@ -7,8 +7,8 @@
 </head>
 <body bgcolor="#000">
     <img src="images/logo.svg" class="center logo-img" alt="logo">
-    <div class="selector-border primaryBackgroundColor-blue center">
-        <div class="selector-box secondaryBackgroundColor-blue">
+    <div class="selector-border primaryBackground center">
+        <div class="selector-box secondaryBackground">
             <div id="selector-switcher"></div>
             <button type="button" class="toggle-btn-left" onclick="changeGameType()">Три карти долі</button>
             <button type="button" class="toggle-btn-right" onclick="changeGameType()">Карта дня</button>
@@ -16,18 +16,18 @@
     </div>
 
     <div class="main-container">
-        <div class="main-title main-gradient-blue">
-            <p class="title-text-style primaryTextColor-blue">Дізнайся, що тобі судилося!</p>
+        <div class="main-title mainGradient">
+            <p class="title-text-style primaryText">Дізнайся, що тобі судилося!</p>
         </div>
         <div class="main-buttons">
-            <div class="clickOnMe-button-border primaryBackgroundColor-blue">
-                <div class="clickOnMe-button-background secondaryBackgroundColor-blue">
-                    <button type="button" class="clickOnMe-button primaryTextColor-blue" onclick="window.location.href = 'index2.html';">Тисни!</button>
+            <div class="clickOnMe-button-border primaryBackground">
+                <div class="clickOnMe-button-background secondaryBackground">
+                    <button type="button" class="clickOnMe-button primaryText" onclick="window.location.href = 'index2.html';">Тисни!</button>
                 </div>
             </div>
-            <div class="instruction-button-border primaryBackgroundColor-blue">
-                <div class="instruction-button-background secondaryBackgroundColor-blue">
-                    <button type="button" class="instruction-button primaryTextColor-blue">Інструкція з режиму</button>
+            <div class="instruction-button-border primaryBackground">
+                <div class="instruction-button-background secondaryBackground">
+                    <button type="button" class="instruction-button primaryText">Інструкція з режиму</button>
                 </div>
             </div>
 
@@ -36,19 +36,20 @@
 
     <div class="footer-container">
         <div id="footer-info">
-        <div class="footer-buttons-border primaryBackgroundColor-blue">
-            <div class="footer-buttons-background secondaryBackgroundColor-blue">
-                <button type="button" class="footer-buttons" onclick="window.location.href = 'https://github.com/Den090706/SE-practice-35-2';"><img src="images/icon_github_blue.svg" alt="github_logo"></button>
+        <div class="footer-buttons-border primaryBackground">
+            <div class="footer-buttons-background secondaryBackground">
+                <button type="button" class="footer-buttons" onclick="window.location.href = 'https://github.com/Den090706/SE-practice-35-2';"><img id="gitHubIcon" src="images/icon_github_blue.svg" alt="github_logo"></button>
             </div>
         </div>
-        <div class="footer-buttons-border primaryBackgroundColor-blue">
-            <div class="footer-buttons-background secondaryBackgroundColor-blue">
-                <button type="button" class="footer-buttons" onclick="window.location.href = 'https://sites.google.com/polytechnic.co.cc/main/%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0/%D1%81%D0%BF%D0%B5%D1%86%D1%96%D0%B0%D0%BB%D1%96%D0%B7%D0%B0%D1%86%D1%96%D1%97?authuser=0';"><img src="images/icon_contacts_blue.svg" alt="contacts_logo"></button>
+        <div class="footer-buttons-border primaryBackground">
+            <div class="footer-buttons-background secondaryBackground">
+                <button type="button" class="footer-buttons" onclick="window.location.href = 'https://sites.google.com/polytechnic.co.cc/main/%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0/%D1%81%D0%BF%D0%B5%D1%86%D1%96%D0%B0%D0%BB%D1%96%D0%B7%D0%B0%D1%86%D1%96%D1%97?authuser=0';"><img id="contactsIcon" src="images/icon_contacts_blue.svg" alt="contacts_logo"></button>
             </div>
         </div>
 
         </div>
     </div>
+    <script src="Painter.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
