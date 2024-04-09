@@ -81,7 +81,6 @@
 .toggle-btn-left, .toggle-btn-right {
     padding: 3px 15px 3px 5px;
     font-size: 28px;
-    font-family: Calibri;
     width: 50%;
     cursor: pointer;
     background: transparent;
@@ -116,21 +115,39 @@
     justify-content: center;
 }
 
-.footer-buttons {
-    color: #ffffff;
-    background-color: #2570d455;
-    border: 3px solid #2570d4;
-    padding: 15px 17px;
+.footer-buttons-border{
     margin-right: 10px;
     margin-left: 10px;
-    cursor: pointer;
+    width: 70px;
+    height: 70px;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 64%, 64% 100%, 20% 100%, 0 100%, 0% 20%);
+    clip-path:  polygon(0% 0%, 97% 0%, 97% 60%, 75% 97%, 0% 97%);
+    display: inline-block;
+    align-items: center;
 }
 
-.footer-buttons:hover {
-    color: #2570d455;
-    background-color: #2d63c8;
+.footer-buttons-background{
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    content: "";
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    clip-path:  polygon(0% 0%, 100% 0%, 100% 66%, 80% 100%, 0% 100%);
+}
+
+.footer-buttons{
+    background: transparent;
+    border: 0;
+    outline: none;
+    align-content: center;
+    padding-top: 5px;
+    padding-right: 10px;
+    width: 100%;
+    cursor: pointer;
+    position: absolute
 }
 
 #selector-switcher {
@@ -151,7 +168,6 @@
 
 .main-title{
     position: relative;
-    font-family: Calibri;
 }
 
 .main-buttons{
@@ -160,27 +176,71 @@
     align-items: center;
 }
 
+.clickOnMe-button-border{
+    margin-bottom: 20px;
+    width: 20%;
+    height: 90px;
+    position: relative;
+    clip-path: polygon(0% 0%, 102% 0%, 102% 73%, 95% 100%, 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clickOnMe-button-background{
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    content: "";
+    width: 99%;
+    height: 95%;
+    position: absolute;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 95% 100%, 0% 100%);
+}
+
 .clickOnMe-button{
     font-size: 51px;
-    font-family: Calibri;
-    background-color: #2570d455;
-    border: 3px solid #2570d4;
-    padding: 15px 55px;
-    margin-bottom: 20px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
     cursor: pointer;
+    position: absolute
+}
+
+.instruction-button-border{
+    margin-bottom: 150px;
+    width: 20%;
+    height: 40px;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 63%, 77% 100%, 0 100%, 0% 20%);
+    clip-path: polygon(0% 0%, 102% 0%, 102% 50%, 95% 100%, 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instruction-button-background{
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    content: "";
+    width: 99%;
+    height: 90%;
+    position: absolute;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 95% 100%, 0% 100%);
 }
 
 .instruction-button{
     font-size: 25px;
-    font-family: Calibri;
-    background-color: #2570d455;
-    border: 3px solid #2570d4;
-    padding: 15px 20px;
-    margin-bottom: 150px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    text-align: center;
+    padding: 3px 15px 3px 5px;
+    width: 100%;
     cursor: pointer;
-    position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 60%, 87% 100%, 0 100%, 0% 20%);
-
+    position: absolute
 }
