@@ -1,18 +1,28 @@
-
+var isSelectedTypeCardOfDay = false;
 var selectorSwitcher = document.getElementById('selector-switcher');
 selectorSwitcher.style.backgroundColor = "rgb(37, 112, 212)";
 changeStyle("blue");
 
 function changeGameType() {
-    if(selectorSwitcher.style.left === '50%'){
+    if(isSelectedTypeCardOfDay){
+        isSelectedTypeCardOfDay = false;
         selectorSwitcher.style.left = '0';
         selectorSwitcher.style.backgroundColor = "rgb(37, 112, 212)";
         changeStyle('blue');
         return;
     }
+    isSelectedTypeCardOfDay = true;
     selectorSwitcher.style.left = '50%';
     selectorSwitcher.style.backgroundColor = "rgba(29, 237, 131)";
     changeStyle('green');
+}
+
+function moveToGameField(){
+    if(isSelectedTypeCardOfDay){
+        window.location.href = 'cardOfDayPage.html';
+        return;
+    }
+    window.location.href = 'ThreeFateCardsPage.html';
 }
 
 function changeStyle(to){
