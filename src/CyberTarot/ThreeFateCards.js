@@ -10,6 +10,8 @@ window.addEventListener("load", (event) => {
         var cardImageAndText = (new CardRandomizer()).getRandomElement(indexesToRemove);
         const cardBack = document.getElementById(`card-${times[index]}`);
         const text = document.getElementById(`card-${times[index]}-text`);
+        const cover = document.getElementById(`card-${times[index]}-cover`);
+        cover.src = cardImageAndText.cover;
         cardBack.src = cardImageAndText.image;
         cards[index].classList.add('flipped');
         text.textContent = cardImageAndText.text;
