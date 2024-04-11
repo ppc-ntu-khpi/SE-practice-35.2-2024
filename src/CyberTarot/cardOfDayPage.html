@@ -9,9 +9,20 @@
     <img src="images/logo.svg" class="center logo-img" alt="logo">
 
     <div class="main-container">
-        <div class="cardOfDay">
-            <img id="cardOfDay" src="images/cards/test-card_shirt.jpg" width="300" height="500" alt="Card">
+
+        <div class="container-center">
+            <div class="card cart-appear">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img class="cardOfDay card-image" src="images/cards/test-card_shirt.jpg" alt="Front Image">
+                    </div>
+                    <div class="card-back">
+                        <img class="cardOfDay card-image" id="cardOfDay-back" src="images/cards/test-card_shirt.jpg" height="500" width="300" alt="Back Image">
+                    </div>
+                </div>
+            </div>
         </div>
+
         <div class="card-text">
             <div class="main-title main-gradient-green">
                 <p id="cardOfDay-text">Перегорни карту, натиснувши на неї!</p>
@@ -21,7 +32,6 @@
             <button class="back-button primaryBackgroundColor-green hide-if-phone" onclick="window.location.href = 'index.html';">До головного меню</button>
         </div>
     </div>
-
 
     <div class="footer-container">
         <div id="footer-info">
@@ -37,6 +47,7 @@
         </div>
         </div>
     </div>
+    <script src="cardRandomizer.js"></script>
     <script src="cardOfDay.js"></script>
 </body>
 </html>

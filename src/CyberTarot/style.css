@@ -1,14 +1,27 @@
 .hide-if-pc{
     display: none;
 }
-
 .hide-if-phone{}
 .shake-text{display: none}
+
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh; !* Центрируем по вертикали *!*/
+}
+
+@keyframes card-appear {
+    to{
+        opacity:1;
+    }
 }
 
 @font-face {
@@ -284,12 +297,12 @@
     clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 95% 100%, 0% 100%);
 }
 
-.cardOfDay{
-    margin: 30px;
-    text-align: center;
+.cart-appear{
+    opacity: 0;
+    animation: card-appear 1.5s ease forwards;
 }
 
-#cardOfDay{
+.cardOfDay{
     border-radius: 15px;
     border: 3px solid rgb(29, 237, 131);
     box-shadow: 0px 0px 15px 10px rgba(29, 237, 131, 0.5);
@@ -305,14 +318,16 @@
 
 .fateCards {
     display: flex;
-    text-align: center;
+}
+
+.fateElement{
+    display: ruby;
 }
 
 .fateCard {
     border-radius: 15px;
     border: 3px solid rgb(37, 112, 212);
     box-shadow: 0px 0px 15px 10px rgba(37, 112, 212, 0.5);
-    margin: 10px;
 }
 
 .fateCard-text {
@@ -350,6 +365,39 @@
     100% { transform: translate(4px, -4px) rotate(-1deg); }
 }
 
+.card{
+    width: 300px;
+    height: 500px;
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.card-image{
+    width: 300px;
+    height: 500px;
+}
 
 @media (pointer:coarse) {
     .hide-if-phone{
@@ -455,5 +503,32 @@
 
     .fateCards > div {
         max-width: 100%;
+    }
+
+    .card{
+        width: 550px;
+        height: 880px;
+        perspective: 1000px;
+    }
+
+    .card-image{
+        width: 550px;
+        height: 880px;
+    }
+
+    #cardOfDay-text{
+        color: rgb(29, 237, 131);
+        font-family: BlenderPro;
+        font-size: 85px;
+        text-align: center;
+    }
+
+    .fateCard-text {
+        color: rgb(37, 112, 212);
+        font-weight: bolder;
+        font-family: BlenderPro;
+        font-size: 80px;
+        text-align: center;
+        margin: 45px;
     }
 }
