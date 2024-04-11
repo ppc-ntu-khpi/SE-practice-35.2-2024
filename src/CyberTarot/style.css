@@ -284,7 +284,7 @@
     clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 95% 100%, 0% 100%);
 }
 
-.cards{
+.cardOfDay{
     margin: 30px;
     text-align: center;
 }
@@ -297,6 +297,35 @@
 
 #cardOfDay-text{
     color: rgb(29, 237, 131);
+    font-family: BlenderPro;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.fateCards {
+    display: flex;
+    text-align: center;
+}
+
+.fateCard {
+    border-radius: 15px;
+    border: 3px solid rgb(37, 112, 212);
+    box-shadow: 0px 0px 15px 10px rgba(37, 112, 212, 0.5);
+    margin: 10px;
+}
+
+.fateCard-text {
+    color: rgb(37, 112, 212);
+    font-weight: bolder;
+    font-family: BlenderPro;
+    font-size: 30px;
+    text-align: center;
+    margin: 45px;
+}
+
+#ThreeFateCards-FlipMe{
+    color: rgb(37, 112, 212);
     font-family: BlenderPro;
     font-size: 35px;
     text-align: center;
@@ -417,5 +446,14 @@
     .footer-buttons-image{
         height: 75%;
         width: 75%;
+    }
+
+    .fateCards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fateCards > div {
+        max-width: 100%;
     }
 }
