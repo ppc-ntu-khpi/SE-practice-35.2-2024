@@ -1,5 +1,5 @@
 var myShakeEvent = new Shake({
-    threshold: 20
+    threshold: 10
 });
 myShakeEvent.start();
 window.addEventListener('shake', shakeEventDidOccur, false);
