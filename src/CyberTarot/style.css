@@ -351,7 +351,7 @@
 }
 
 
-@media (pointer:coarse){
+@media (pointer:coarse) {
     .hide-if-phone{
         display: none;
     }

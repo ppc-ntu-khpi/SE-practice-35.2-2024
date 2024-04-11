@@ -1,3 +1,12 @@
+var myShakeEvent = new Shake({
+    threshold: 20
+});
+myShakeEvent.start();
+window.addEventListener('shake', shakeEventDidOccur, false);
+function shakeEventDidOccur () {
+    navigator.vibrate(200);
+    moveToGameField();
+}
 var isSelectedTypeCardOfDay = false;
 var selectorSwitcher = document.getElementById('selector-switcher');
 selectorSwitcher.style.backgroundColor = "rgb(37, 112, 212)";
