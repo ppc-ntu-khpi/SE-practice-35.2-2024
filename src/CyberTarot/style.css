@@ -73,8 +73,10 @@
 }
 
 .SE-logo{
+    display: block;
     position: fixed;
-    margin: 15px 0 0 35px;
+    width: 8%;
+    margin: 5px 0 0 25px;
 }
 
 .title-text-style{
