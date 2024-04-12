@@ -471,9 +471,9 @@
     }
 
     .shake-text{
-        font-family: Blender Pro;
+        font-family: BlenderPro;
         font-size: 140px;
-        font-weight: 400;
+        font-weight: bolder;
         text-align: center;
     }
 
@@ -560,5 +560,19 @@
         font-size: 80px;
         text-align: center;
         margin: 45px;
+    }
+
+    .contacts-list{
+        color: #F75049;
+        font-family: BlenderPro;
+        font-size: 30px;
+        flex-direction: column; /* Зміна напрямку на стовпчик */
+        align-items: center;
+    }
+
+    .contacts-button{
+        width: 50%;
+        height: 80px;
+        margin: 20px;
     }
 }
