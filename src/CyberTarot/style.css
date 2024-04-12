@@ -72,6 +72,13 @@
     margin-top: 20px;
 }
 
+.SE-logo{
+    display: block;
+    position: fixed;
+    width: 8%;
+    margin: 5px 0 0 25px;
+}
+
 .title-text-style{
     font-weight: 700;
     font-size: 64px;
@@ -318,10 +325,12 @@
 
 .fateCards {
     display: flex;
+
 }
 
 .fateElement{
     display: ruby;
+    min-width: 33%;
 }
 
 .fateCard {
@@ -399,6 +408,27 @@
     height: 500px;
 }
 
+.contacts{
+    color: #F75049;
+}
+
+.contacts-list{
+    color: #F75049;
+    font-family: BlenderPro;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-element{
+    margin: 0 10px;
+}
+
+.contacts-button{
+    background: #F75049;
+}
+
 @media (pointer:coarse) {
     .hide-if-phone{
         display: none;
@@ -441,9 +471,9 @@
     }
 
     .shake-text{
-        font-family: Blender Pro;
+        font-family: BlenderPro;
         font-size: 140px;
-        font-weight: 400;
+        font-weight: bolder;
         text-align: center;
     }
 
@@ -530,5 +560,19 @@
         font-size: 80px;
         text-align: center;
         margin: 45px;
+    }
+
+    .contacts-list{
+        color: #F75049;
+        font-family: BlenderPro;
+        font-size: 30px;
+        flex-direction: column; /* Зміна напрямку на стовпчик */
+        align-items: center;
+    }
+
+    .contacts-button{
+        width: 50%;
+        height: 80px;
+        margin: 20px;
     }
 }
