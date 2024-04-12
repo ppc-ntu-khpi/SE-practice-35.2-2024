@@ -318,10 +318,12 @@
 
 .fateCards {
     display: flex;
+
 }
 
 .fateElement{
     display: ruby;
+    min-width: 33%;
 }
 
 .fateCard {
