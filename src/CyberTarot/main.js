@@ -72,3 +72,14 @@ function changeStyle(to){
         }
     }
 }
+
+function showPopUp(){
+    document.querySelector('.pop-up-box').classList.add('active');
+}
+
+function hidePopUp(){
+    var popUp = document.querySelector('.pop-up-box');
+    if(popUp.classList.contains('active')){
+        popUp.classList.remove('active');
+    }
+}
