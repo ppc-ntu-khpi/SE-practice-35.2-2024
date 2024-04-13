@@ -18,7 +18,6 @@ function changeGameType() {
         selectorSwitcher.style.left = '0';
         selectorSwitcher.style.backgroundColor = "rgb(37, 112, 212)";
         document.querySelector('.SE-logo').setAttribute('src', 'images/SE-logo-blue.svg');
-        document.querySelector('.TEAM-logo').setAttribute('src', 'images/Team-logo-blue.svg');
         changeStyle('blue');
         return;
     }
@@ -26,7 +25,6 @@ function changeGameType() {
     selectorSwitcher.style.left = '50%';
     selectorSwitcher.style.backgroundColor = "rgba(29, 237, 131)";
     document.querySelector('.SE-logo').setAttribute('src', 'images/SE-logo-green.svg');
-    document.querySelector('.TEAM-logo').setAttribute('src', 'images/Team-logo-green.svg');
     changeStyle('green');
 }
 

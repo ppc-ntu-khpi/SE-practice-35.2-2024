@@ -83,8 +83,9 @@
 }
 
 .logo-img{
-    margin: 20px auto;
-    display: block;
+    margin-top: 20px;
+    margin-left: 15%;
+    display: inline-block;
 }
 
 .SE-logo{
@@ -92,14 +93,6 @@
     position: relative;
     width: 8%;
     margin: 5px 0 0 25px;
-}
-
-.TEAM-logo{
-    display: inline-block;
-    position: relative;
-    width: 8%;
-    margin-right: 25px;
-    float: right;
 }
 
 .title-text-style{
@@ -467,18 +460,16 @@
         display: block;
     }
 
+    .SE-logo-container{
+        text-align: center;
+    }
+
     .SE-logo{
-        display: inline-block;
         position: relative;
         width: 20%;
         margin-left: auto;
-    }
-
-    .TEAM-logo{
-        display: inline-block;
-        position: relative;
-        width: 20%;
-        margin-right: auto;
+        align-items: center;
+        display: block;
     }
 
     .selector-border {
