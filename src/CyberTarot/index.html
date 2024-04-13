@@ -36,7 +36,7 @@
             <p class="shake-text primaryText hide-if-pc">Тряси! Тряси! Тряси!</p>
             <div class="instruction-button-border primaryBackground">
                 <div class="instruction-button-background secondaryBackground">
-                    <button type="button" class="instruction-button primaryText" onclick="showPopUp()">Інструкція з режиму</button>
+                    <button type="button" class="instruction-button primaryText" id="manual" onclick="showPopUp()">Інструкція з режиму</button>
                 </div>
             </div>
 
@@ -51,7 +51,7 @@
         </div>
         <div class="footer-buttons-border primaryBackground">
             <div class="footer-buttons-background secondaryBackground">
-                <button type="button" id="contacts-button" class="footer-buttons" onclick="window.location.href = 'contacts.html';"><img id="contactsIcon" class="footer-buttons-image" src="images/icon_contacts_blue.svg" alt="contacts_logo"></button>
+                <button type="button" id="contacts-button" class="footer-buttons" onclick="setTimeout(function(){ window.location.href = 'contacts.html'; }, 1000)"><img id="contactsIcon" class="footer-buttons-image" src="images/icon_contacts_blue.svg" alt="contacts_logo"></button>
             </div>
         </div>
 
