@@ -29,7 +29,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /*height: 100vh; !* Центрируем по вертикали *!*/
 }
 
 @keyframes card-appear {
@@ -452,22 +451,23 @@
 
     .hide-if-pc{
         display: flex;
+        flex-wrap: wrap;
     }
 
     .logo-img{
         width: 100%;
         margin: 20px auto;
-        display: block;
     }
 
     .SE-logo-container{
         text-align: center;
+        width: 100%;
     }
 
     .SE-logo{
         position: relative;
         width: 20%;
-        margin-left: auto;
+        margin: 0 auto;
         align-items: center;
         display: block;
     }
