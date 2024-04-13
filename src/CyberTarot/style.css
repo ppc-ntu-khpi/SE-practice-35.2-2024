@@ -4,8 +4,6 @@
 .hide-if-phone{}
 .shake-text{display: none}
 
-
-
 .pop-up-box{
     opacity: 0;
     position: absolute;
@@ -86,11 +84,13 @@
 
 .logo-img{
     margin-top: 20px;
+    margin-left: 15%;
+    display: inline-block;
 }
 
 .SE-logo{
-    display: block;
-    position: fixed;
+    display: inline-block;
+    position: relative;
     width: 8%;
     margin: 5px 0 0 25px;
 }
@@ -463,8 +463,16 @@
     }
 
     .logo-img{
-        margin-top: 20px;
         width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .SE-logo{
+        display: block;
+        position: relative;
+        width: 20%;
+        margin: 10px auto;
     }
 
     .selector-border {
