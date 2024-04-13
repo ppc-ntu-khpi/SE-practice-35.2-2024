@@ -4,6 +4,22 @@
 .hide-if-phone{}
 .shake-text{display: none}
 
+
+
+.pop-up-box{
+    opacity: 0;
+    position: absolute;
+    width: 50%;
+    margin: 10% 24%;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.pop-up-box.active{
+    animation: card-appear 0.5s ease forwards;
+    pointer-events: auto;
+}
+
 .center {
     display: block;
     margin-left: auto;
@@ -77,6 +93,14 @@
     position: fixed;
     width: 8%;
     margin: 5px 0 0 25px;
+}
+
+.TEAM-logo{
+    display: inline-block;
+    position: relative;
+    width: 8%;
+    margin-right: 25px;
+    float: right;
 }
 
 .title-text-style{
