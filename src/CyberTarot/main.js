@@ -1,3 +1,17 @@
+var isMobile;
+    if (navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPad/i)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/Windows Phone/i)) {
+        isMobile = true ;
+    }
+    else {
+        isMobile = false ;
+    }
+
 var myShakeEvent = new Shake({
     threshold: 10
 });
@@ -19,6 +33,12 @@ function changeGameType() {
         selectorSwitcher.style.backgroundColor = "rgb(37, 112, 212)";
         document.querySelector('.SE-logo-PC').setAttribute('src', 'images/SE-logo-blue.svg');
         document.querySelector('.SE-logo').setAttribute('src', 'images/SE-logo-blue.svg');
+        if(isMobile) {
+            document.getElementById('pop-up-phone').setAttribute('src', 'images/Pop Up Phone.svg');
+        }
+        else {
+            document.getElementById('pop-up-pc').setAttribute('src', 'images/Pop Up PC.svg');
+        }
         changeStyle('blue');
         return;
     }
@@ -27,6 +47,12 @@ function changeGameType() {
     selectorSwitcher.style.backgroundColor = "rgba(29, 237, 131)";
     document.querySelector('.SE-logo-PC').setAttribute('src', 'images/SE-logo-green.svg');
     document.querySelector('.SE-logo').setAttribute('src', 'images/SE-logo-green.svg');
+    if(isMobile) {
+        document.getElementById('pop-up-phone').setAttribute('src', 'images/Pop Up Phone 2.svg');
+    }
+    else {
+        document.getElementById('pop-up-pc').setAttribute('src', 'images/Pop Up PC 2.svg');
+    }
     changeStyle('green');
 }
 
@@ -78,11 +104,11 @@ function changeStyle(to){
 }
 
 function showPopUp(){
-    document.querySelector('.pop-up-box').classList.add('active');
+    document.querySelector('.pop-up-background').classList.add('active');
 }
 
 function hidePopUp(){
-    var popUp = document.querySelector('.pop-up-box');
+    var popUp = document.querySelector('.pop-up-background');
     if(popUp.classList.contains('active')){
         popUp.classList.remove('active');
     }

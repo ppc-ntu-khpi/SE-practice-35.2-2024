@@ -7,8 +7,11 @@
 </head>
 <body bgcolor="#000">
 
-<div class="pop-up-box hide-if-phone" onclick="hidePopUp()">
-    <img src="images/Pop%20Up.svg" alt="asd">
+<div class="pop-up-background" onclick="hidePopUp()">
+    <div class="pop-up-box" onclick="hidePopUp()">
+        <img id="pop-up-pc" class="hide-if-phone" src="images/Pop%20Up%20PC.svg" alt="asd">
+        <img id="pop-up-phone" class="hide-if-pc pop-up-image-phone" src="images/Pop%20Up%20Phone.svg" alt="asd">
+    </div>
 </div>
 <div class="hide-if-pc">
     <div class="SE-logo-container">
