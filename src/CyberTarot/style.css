@@ -452,7 +452,9 @@
 
 .contacts-button{
     background: #F75049;
+    color: black;
 }
+
 
 @media (pointer:coarse) {
     .hide-if-phone{
