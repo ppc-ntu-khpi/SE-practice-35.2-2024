@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CyberTarot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="#000">
+
+<div class="pop-up-background" onclick="hidePopUp()">
+    <div class="pop-up-box" onclick="hidePopUp()">
+        <img id="pop-up-pc" class="hide-if-phone" src="images/Pop%20Up%20PC.svg" alt="asd">
+        <img id="pop-up-phone" class="hide-if-pc pop-up-image-phone" src="images/Pop%20Up%20Phone.svg" alt="asd">
+    </div>
+</div>
+<div class="hide-if-pc">
+    <div class="SE-logo-container">
+        <a href="https://sites.google.com/polytechnic.co.cc/main/%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0/%D1%81%D0%BF%D0%B5%D1%86%D1%96%D0%B0%D0%BB%D1%96%D0%B7%D0%B0%D1%86%D1%96%D1%97?authuser=0">
+            <img src="images/SE-logo-blue.svg" class="SE-logo" alt="SE logo">
+        </a>
+    </div>
+
+    <img src="images/logo.svg" class="center logo-img" alt="logo">
+</div>
+
+
+<div class="hide-if-phone">
+        <a href="https://sites.google.com/polytechnic.co.cc/main/%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0/%D1%81%D0%BF%D0%B5%D1%86%D1%96%D0%B0%D0%BB%D1%96%D0%B7%D0%B0%D1%86%D1%96%D1%97?authuser=0">
+            <img src="images/SE-logo-blue.svg" class="SE-logo SE-logo-PC" alt="SE logo">
+        </a>
+    <img src="images/logo.svg" class="center logo-img" alt="logo">
+
+</div>
+    <div class="selector-border primaryBackground center">
+        <div class="selector-box secondaryBackground">
+            <div id="selector-switcher"></div>
+            <button type="button" class="toggle-btn-left" onclick="changeGameType()">Три карти долі</button>
+            <button type="button" class="toggle-btn-right" onclick="changeGameType()">Карта дня</button>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="main-title mainGradient">
+            <p class="title-text-style primaryText">Дізнайся, що тобі судилося!</p>
+        </div>
+        <div class="main-buttons">
+            <div class="clickOnMe-button-border primaryBackground hide-if-phone">
+                <div class="clickOnMe-button-background secondaryBackground">
+                    <button type="button" class="clickOnMe-button primaryText" onclick="moveToGameField()">Тисни!</button>
+                </div>
+            </div>
+            <p class="shake-text primaryText hide-if-pc">Тряси! Тряси! Тряси!</p>
+            <div class="instruction-button-border primaryBackground">
+                <div class="instruction-button-background secondaryBackground">
+                    <button type="button" class="instruction-button primaryText" id="manual" onclick="showPopUp()">Інструкція з режиму</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer-container">
+        <div id="footer-info">
+        <div class="footer-buttons-border primaryBackground">
+            <div class="footer-buttons-background secondaryBackground">
+                <button type="button" id="gitHub-button" class="footer-buttons" onclick="window.location.href = 'https://github.com/Den090706/SE-practice-35-2';"><img id="gitHubIcon" class="footer-buttons-image" src="images/icon_github_blue.svg" alt="github_logo"></button>
+            </div>
+        </div>
+        <div class="footer-buttons-border primaryBackground">
+            <div class="footer-buttons-background secondaryBackground">
+                <button type="button" id="contacts-button" class="footer-buttons" onclick="setTimeout(function(){ window.location.href = 'contacts.html'; }, 1000)"><img id="contactsIcon" class="footer-buttons-image" src="images/icon_contacts_blue.svg" alt="contacts_logo"></button>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+    <script src="Painter.js"></script>
+    <script src="libs/shake.js"></script>
+    <script src="main.js"></script>
+    <script src="PlaySound.js"></script>
+</body>
+</html>

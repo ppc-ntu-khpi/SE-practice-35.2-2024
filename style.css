@@ -1,0 +1,631 @@
+.hide-if-pc{
+    display: none;
+}
+.hide-if-phone{}
+.shake-text{display: none}
+
+.pop-up-box{
+    /*opacity: 0;*/
+    position: absolute;
+    width: 50%;
+    margin: 10% 24%;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.pop-up-background{
+    width: 99%;
+    height: 99%;
+    position: absolute;
+    opacity: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.7);
+    pointer-events: none;
+}
+
+.pop-up-background.active{
+    animation: card-appear 0.5s ease forwards;
+    pointer-events: auto;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes card-appear {
+    to{
+        opacity:1;
+    }
+}
+
+@font-face {
+    font-family: 'BlenderPro';
+    src: url('fonts/BlenderPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'BlenderPro';
+    src: url('fonts/BlenderPro-Thin.ttf') format('truetype');
+    font-weight: 400;
+}
+
+.primaryBackgroundColor-blue{
+    background-color: rgb(37, 112, 212);
+}
+
+.secondaryBackgroundColor-blue{
+    background-color: rgb(20, 58, 112);
+}
+
+.primaryTextColor-blue{
+    color: rgba(37, 112, 212, 1);
+}
+
+.main-gradient-blue{
+    background: radial-gradient(50% 50% at 50% 50%, rgba(37, 112, 212, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.primaryBackgroundColor-green{
+    background-color: rgba(29, 237, 131);
+}
+
+.secondaryBackgroundColor-green{
+    background-color: rgb(19, 128, 72);
+}
+
+.primaryTextColor-green{
+    color: rgba(29, 237, 131, 1);
+}
+
+.main-gradient-green{
+    background: radial-gradient(50% 50% at 50% 50%, rgba(29, 237, 131, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.logo-img{
+    margin-top: 20px;
+    margin-left: 15%;
+    display: inline-block;
+}
+
+.SE-logo{
+    display: inline-block;
+    position: relative;
+    width: 8%;
+    margin: 5px 0 0 25px;
+}
+
+.title-text-style{
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+}
+
+.selector-box {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    content: "";
+    width: 99%;
+    height: 90%;
+    position: absolute;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 40%, 95% 100%, 0% 100%);
+}
+
+.selector-border {
+    top: 40px;
+    width: 30%;
+    height: 39px;
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 101% 33%, 95% 100%, 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-btn-left{
+
+}
+
+.toggle-btn-right {
+    left: 50%;
+}
+
+.toggle-btn-left, .toggle-btn-right {
+    padding: 3px 15px 3px 5px;
+    font-size: 28px;
+    font-family: BlenderPro;
+    font-weight: 400;
+    width: 50%;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: absolute;
+    text-align: center;
+    clip-path:  polygon(0% 0%, 100% 0%, 100% 40%, 90% 100%, 0% 100%);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-info{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+.button-border{
+    top: 40px;
+    width: 90%;
+    height: 90%;
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 101% 33%, 95% 100%, 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-buttons-border{
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    clip-path:  polygon(0% 0%, 97% 0%, 97% 60%, 75% 97%, 0% 97%);
+    display: inline-block;
+    align-items: center;
+}
+
+.footer-buttons-background{
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    content: "";
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    clip-path:  polygon(0% 0%, 100% 0%, 100% 66%, 80% 100%, 0% 100%);
+}
+
+.footer-buttons{
+    background: transparent;
+    border: 0;
+    outline: none;
+    align-content: center;
+    padding-top: 10px;
+    padding-right: 8px;
+    width: 100%;
+    cursor: pointer;
+    position: absolute
+}
+
+#selector-switcher {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-radius: 2px;
+    content: "";
+    transition: .3s;
+    clip-path:  polygon(0% 0%, 100% 0%, 100% 40%, 90% 100%, 0% 100%);
+}
+
+.main-container{
+    padding: 30px;
+}
+
+.main-title{
+    position: relative;
+    font-family: BlenderPro;
+    font-weight: 500;
+}
+
+.main-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clickOnMe-button-border{
+    margin-bottom: 20px;
+    width: 20%;
+    height: 90px;
+    position: relative;
+    clip-path: polygon(0% 0%, 102% 0%, 102% 73%, 95% 100%, 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clickOnMe-button-background{
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    content: "";
+    width: 99%;
+    height: 95%;
+    position: absolute;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 95% 100%, 0% 100%);
+}
+
+.clickOnMe-button{
+    font-size: 60px;
+    font-family: BlenderPro;
+    font-weight: 500;
+    background: transparent;
+    border: 0;
+    outline: none;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    position: absolute
+}
+
+.instruction-button-border{
+    margin-bottom: 150px;
+    width: 20%;
+    height: 40px;
+    position: relative;
+    clip-path: polygon(0% 0%, 102% 0%, 102% 50%, 95% 100%, 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instruction-button-background{
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    content: "";
+    width: 99%;
+    height: 90%;
+    position: absolute;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 95% 100%, 0% 100%);
+}
+
+.instruction-button{
+    font-size: 30px;
+    font-family: BlenderPro;
+    font-weight: 400;
+    background: transparent;
+    border: 0;
+    outline: none;
+    text-align: center;
+    padding: 3px 15px 3px 5px;
+    width: 100%;
+    cursor: pointer;
+    position: absolute
+}
+
+
+.back-button{
+    font-size: 30px;
+    font-family: BlenderPro;
+    border: 0;
+    outline: none;
+    text-align: center;
+    padding: 3px 15px 3px 5px;
+    margin: 20px;
+    cursor: pointer;
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 95% 100%, 0% 100%);
+}
+
+.cart-appear{
+    opacity: 0;
+    animation: card-appear 1.5s ease forwards;
+}
+
+.cardOfDay{
+    border-radius: 15px;
+    border: 3px solid rgb(29, 237, 131);
+    box-shadow: 0px 0px 15px 10px rgba(29, 237, 131, 0.5);
+}
+
+#cardOfDay-text{
+    color: rgb(29, 237, 131);
+    font-family: BlenderPro;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.fateCards {
+    display: flex;
+
+}
+
+.fateElement{
+    display: ruby;
+    min-width: 33%;
+}
+
+.fateCard {
+    border-radius: 15px;
+    border: 3px solid rgb(37, 112, 212);
+    box-shadow: 0px 0px 15px 10px rgba(37, 112, 212, 0.5);
+}
+
+.fateCard-text {
+    color: rgb(37, 112, 212);
+    font-weight: bolder;
+    font-family: BlenderPro;
+    font-size: 30px;
+    text-align: center;
+    margin: 45px;
+}
+
+#ThreeFateCards-FlipMe{
+    color: rgb(37, 112, 212);
+    font-family: BlenderPro;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.shake{
+    animation: shake 1s;
+}
+
+@keyframes shake {
+    0% { transform: translate(4px, 4px) rotate(0deg); }
+    10% { transform: translate(-4px, -4px) rotate(-1deg); }
+    20% { transform: translate(-7px, 0px) rotate(1deg); }
+    30% { transform: translate(7px, 4px) rotate(0deg); }
+    40% { transform: translate(4px, -4px) rotate(1deg); }
+    50% { transform: translate(-4px, 4px) rotate(-1deg); }
+    60% { transform: translate(-7px, 4px) rotate(0deg); }
+    70% { transform: translate(7px, 4px) rotate(-1deg); }
+    80% { transform: translate(-4px, -4px) rotate(1deg); }
+    90% { transform: translate(4px, 4px) rotate(0deg); }
+    100% { transform: translate(4px, -4px) rotate(-1deg); }
+}
+
+.card{
+    width: 300px;
+    height: 500px;
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.card-image{
+    width: 300px;
+    height: 500px;
+}
+
+.contacts{
+    color: #F75049;
+}
+
+.contacts-list{
+    color: #F75049;
+    font-family: BlenderPro;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-element{
+    margin: 0 10px;
+}
+
+.contacts-button{
+    background: #F75049;
+}
+
+@media (pointer:coarse) {
+    .hide-if-phone{
+        display: none;
+    }
+
+    .hide-if-pc{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logo-img{
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .SE-logo-container{
+        text-align: center;
+        width: 100%;
+    }
+
+    .SE-logo{
+        position: relative;
+        width: 20%;
+        margin: 0 auto;
+        align-items: center;
+        display: block;
+    }
+
+    .selector-border {
+        top: 40px;
+        width: 90%;
+        height: 100px;
+        position: relative;
+        clip-path: polygon(0% 0%, 100% 0%, 101% 33%, 95% 100%, 0% 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .toggle-btn-left, .toggle-btn-right {
+        padding: 3px 15px 3px 5px;
+        font-size: 70px;
+        font-family: BlenderPro;
+        font-weight: 400;
+        color: black;
+        width: 50%;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        outline: none;
+        position: absolute;
+        text-align: center;
+        clip-path:  polygon(0% 0%, 100% 0%, 100% 40%, 90% 100%, 0% 100%);
+    }
+
+    .shake-text{
+        font-family: BlenderPro;
+        font-size: 140px;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .instruction-button-border{
+        margin-bottom: 150px;
+        width: 80%;
+        height: 100px;
+        position: relative;
+        clip-path: polygon(0% 0%, 102% 0%, 102% 50%, 95% 100%, 0% 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .instruction-button{
+        font-size: 80px;
+        font-family: BlenderPro;
+        font-weight: 400;
+        background: transparent;
+        border: 0;
+        outline: none;
+        text-align: center;
+        padding: 3px 15px 3px 5px;
+        width: 100%;
+        cursor: pointer;
+        position: absolute
+    }
+
+    .footer-container {
+        display: flex;
+        vertical-align: bottom;
+        horiz-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-buttons-border{
+        margin-right: 30px;
+        margin-left: 30px;
+        width: 150px;
+        height: 150px;
+        position: relative;
+        clip-path:  polygon(0% 0%, 97% 0%, 97% 60%, 75% 97%, 0% 97%);
+        display: inline-block;
+        align-items: center;
+    }
+
+    .footer-buttons-image{
+        height: 75%;
+        width: 75%;
+    }
+
+    .fateCards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fateCards > div {
+        max-width: 100%;
+    }
+
+    .card{
+        width: 550px;
+        height: 880px;
+        perspective: 1000px;
+    }
+
+    .card-image{
+        width: 550px;
+        height: 880px;
+    }
+
+    #cardOfDay-text{
+        color: rgb(29, 237, 131);
+        font-family: BlenderPro;
+        font-size: 85px;
+        text-align: center;
+    }
+
+    .fateCard-text {
+        color: rgb(37, 112, 212);
+        font-weight: bolder;
+        font-family: BlenderPro;
+        font-size: 80px;
+        text-align: center;
+        margin: 45px;
+    }
+
+    .contacts-list{
+        color: #F75049;
+        font-family: BlenderPro;
+        font-size: 30px;
+        flex-direction: column; /* Зміна напрямку на стовпчик */
+        align-items: center;
+    }
+
+    .contacts-button{
+        width: 50%;
+        height: 80px;
+        margin: 20px;
+    }
+
+    .pop-up-box{
+        /*opacity: 0;*/
+        position: absolute;
+        width: 96%;
+        z-index: 999;
+        margin: 90% 0;
+        pointer-events: none;
+    }
+
+    .pop-up-image-phone{
+        width: 100%;
+        margin: 0 2%;
+    }
+}
