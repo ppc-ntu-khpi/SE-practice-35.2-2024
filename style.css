@@ -516,6 +516,14 @@
         text-align: center;
     }
 
+    .back-button{
+        height: 60px;
+        margin-bottom: 50px;
+        font-size: 40px;
+        font-weight: bolder;
+        text-align: center;
+    }
+
     .instruction-button-border{
         margin-bottom: 150px;
         width: 80%;

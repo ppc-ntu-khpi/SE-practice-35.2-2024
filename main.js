@@ -1,5 +1,3 @@
-checkAndRequestMotionPermission();
-
 var isMobile;
     if (navigator.userAgent.match(/Android/i)
         || navigator.userAgent.match(/webOS/i)
@@ -114,33 +112,4 @@ function hidePopUp(){
     if(popUp.classList.contains('active')){
         popUp.classList.remove('active');
     }
-}
-
-
-async function checkAndRequestMotionPermission() {
-
-    // Any browser using requestPermission API
-    if (typeof DeviceOrientationEvent.requestPermission === 'function') {
-
-        // If previously granted, user will see no prompts and listeners get setup right away.
-        // If error, we show special UI to the user.
-        // FYI, "requestPermission" acts more like "check permission" on the device.
-        await DeviceOrientationEvent.requestPermission()
-            .then(permissionState => {
-                if (permissionState == 'granted') {
-                    // Hide special UI; no longer needed
-                    btn_reqPermission.style.display = "none"
-                    this.setMotionListeners()
-                }
-            })
-            .catch( (error) => {
-                console.log("Error getting sensor permission: %O", error)
-            })
-
-        // All other browsers
-    } else {
-        myShakeEvent.start();
-        window.addEventListener('shake', shakeEventDidOccur, false);
-    }
-
 }
