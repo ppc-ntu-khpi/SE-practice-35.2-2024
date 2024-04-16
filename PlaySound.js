@@ -4,7 +4,7 @@ const sounds = {
     close_manual: new Audio('sounds/close_manual.mp3'),
     mode_change: new Audio('sounds/mode_change.mp3'),
     opening_manual: new Audio('sounds/opening_manual.mp3'),
-    playButton: new Audio('sounds/play_button.mp3'),
+    playButton: new Audio('sounds/Play_button.mp3'),
     socialButtonClick: new Audio('sounds/social_button_pressing.mp3'),
 }
 
