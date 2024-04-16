@@ -1,17 +1,19 @@
 const sounds = {
-    buttonClick: new Audio('sounds/Social_button_pressing.mp3'),
+    BackToMainMenu: new Audio('sounds/Back_to_the_main_menu.mp3'),
     button_hovering: new Audio('sounds/Button_hovering.mp3'),
-    opening_manual: new Audio('sounds/Opening_manual.mp3'),
     close_manual: new Audio('sounds/Close_manual.mp3'),
-    mode_change: new Audio('sounds/Mode_change.mp3')
+    mode_change: new Audio('sounds/mode_change.mp3'),
+    opening_manual: new Audio('sounds/Opening_manual.mp3'),
+    playButton: new Audio('sounds/Play_button.mp3'),
+    socialButtonClick: new Audio('sounds/Social_button_pressing.mp3'),
 }
 
 function socialButtons() {
-    sounds.buttonClick.volume = 0.5;
-    sounds.buttonClick.play();
+    sounds.socialButtonClick.volume = 0.5;
+    sounds.socialButtonClick.play();
 }
 
-function buttonClick(){
+function logoClick(){
     sounds.button_hovering.volume = 0.5;
     sounds.button_hovering.play();
 }
@@ -26,7 +28,36 @@ function closingManual(){
     sounds.close_manual.play();
 }
 
-document.getElementById('gitHub-button').addEventListener('click', socialButtons);
-document.getElementById('contacts-button').addEventListener('click', socialButtons);
-document.getElementById('back-to-menu').addEventListener('click', buttonClick);
-document.getElementById('manual').addEventListener('click', openingManual);
+function modeChange(){
+    sounds.mode_change.volume = 0.5;
+    sounds.mode_change.play();
+}
+
+function play(){
+    sounds.playButton.volume = 0.5;
+    sounds.playButton.play();
+}
+
+function backToMain(){
+    sounds.BackToMainMenu.volume = 0.5;
+    sounds.BackToMainMenu.play();
+}
+
+try{
+    document.getElementById('gitHub-button').addEventListener('click', socialButtons);
+    document.getElementById('contacts-button').addEventListener('click', socialButtons);
+}
+catch (e) {}
+try{
+    document.getElementById('manual').addEventListener('click', openingManual);
+}
+catch (e) {}
+try{
+    document.getElementById('back-to-menu').addEventListener('click', backToMain);
+}
+catch (e) {}
+try{
+    document.querySelector('.clickOnMe-button').addEventListener('click', play);
+}
+catch (e) {}
+document.querySelectorAll('.SE-logo').forEach((value, key, parent) => value.addEventListener('click', logoClick));

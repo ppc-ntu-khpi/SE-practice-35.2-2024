@@ -27,6 +27,7 @@ selectorSwitcher.style.backgroundColor = "rgb(37, 112, 212)";
 changeStyle("blue");
 
 function changeGameType() {
+    modeChange();
     if(isSelectedTypeCardOfDay){
         isSelectedTypeCardOfDay = false;
         selectorSwitcher.style.left = '0';
@@ -110,6 +111,7 @@ function showPopUp(){
 function hidePopUp(){
     var popUp = document.querySelector('.pop-up-background');
     if(popUp.classList.contains('active')){
+        closingManual();
         popUp.classList.remove('active');
     }
 }
