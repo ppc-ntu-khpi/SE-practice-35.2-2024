@@ -1,11 +1,11 @@
 const sounds = {
     BackToMainMenu: new Audio('sounds/Back_to_the_main_menu.mp3'),
-    button_hovering: new Audio('sounds/Button_hovering.mp3'),
-    close_manual: new Audio('sounds/Close_manual.mp3'),
+    button_hovering: new Audio('sounds/button_hovering.mp3'),
+    close_manual: new Audio('sounds/close_manual.mp3'),
     mode_change: new Audio('sounds/mode_change.mp3'),
-    opening_manual: new Audio('sounds/Opening_manual.mp3'),
-    playButton: new Audio('sounds/Play_button.mp3'),
-    socialButtonClick: new Audio('sounds/Social_button_pressing.mp3'),
+    opening_manual: new Audio('sounds/opening_manual.mp3'),
+    playButton: new Audio('sounds/play_button.mp3'),
+    socialButtonClick: new Audio('sounds/social_button_pressing.mp3'),
 }
 
 function socialButtons() {
